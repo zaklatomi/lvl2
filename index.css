@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+main{
+    width:80%;
+    max-width:900px;
+    margin:auto;
+}
+.dot1{
+    height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 20px;
+}
+.dot2{
+    height: 25px;
+  width: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 20px;
+
+}
+.dot3{
+    height: 25px;
+  width: 25px;
+  background-color: purple;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 20px;
+
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block: 20px;
+}
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+    padding-inline: 10px;
+}
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.img{
+    width:100%
+}
+.center{
+    text-align: center;
+}
+.discount{
+    font-weight: 700;
+    font-size: 50pt;
+}
+.shop{
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: white;
+    padding-inline: 10px;
+    padding-block: 5px;
+    text-decoration: none;
+    color:black;
+
+}
+.shop:hover{
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: black;
+    padding-inline: 10px;
+    padding-block: 5px;
+    text-decoration: none;
+    color:white;
+    transition: ease-in-out .2s;
+
+}
+
+.order{
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: black;
+    padding-inline: 10px;
+    padding-block: 5px;
+    text-decoration: none;
+    color:white;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+.smaller{
+    font-size: 10pt;
+    position: relative;
+    bottom: 7.5px;
+}
+.redboxgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+}
+
+.redimg{
+    border: 1px solid red;
+    border-radius: 16px;
+    padding-inline:75px;
+    padding-block: 50px;
+    
+}.span{
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+}
+p{
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.right{
+    float: right;
+}
+.star{
+    width: 15px;
+}
+.number{
+    color:grey;
+}
+.more{
+    text-align: center;
+    margin-block: 30px;
+}
+footer{
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 350px;
+}
+.footer{
+    margin: auto;
+}
+footer div a {
+    background-color: transparent;
+}
+.shop1{
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: transparent;
+    padding-inline: 10px;
+    padding-block: 5px;
+    text-decoration: none;
+    color:black;
+}
+.shop1:hover{
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: black;
+    padding-inline: 10px;
+    padding-block: 5px;
+    text-decoration: none;
+    color:white;
+    transition: ease-in-out .2s;
+}
+.text{
+    position: relative;
+    top: 20%;
+    
+}
+.br{
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .redboxgrid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .span{
+        left: -145px;
+        bottom: 40px;
+    }
+}
+@media screen and (max-width: 930px) {
+    nav ul li{
+        display: block;
+        margin: 10px;
+    }
+    .fejhallgato{
+        width: 100%;
+    }
+    .top{
+        grid-template-columns: auto, auto;
+    }
+    .discount{
+        font-size: 25pt;
+    }
+    .br{
+        display: block;
+    }
+
+    
+}
+@media screen and (max-width: 500px) {
+    .redboxgrid{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }    
+}
